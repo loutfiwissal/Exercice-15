@@ -1,0 +1,41 @@
+              Algorithme moyenne
+variable
+  N,n1,n2,n3:reel
+debut
+  ecrire("taper votre note1: ")
+  lire(n1)
+tant que (n1<0 et n1>20) fair
+   ecrire("taper votre note1 entre 0 et 20: ")
+   lire(n1)
+fin tantque
+   ecrire(taper votre note2: ")
+   lire(n2)
+tant que (n2<0 et n2>20) fair
+    ecrire("taper votre note2 entre 0 et 20: ")
+    lire(n2)
+fin tantque
+    ecrire(taper votre note3 entre 0 et 20: ")
+    lire(n3) 
+tant que (n3<0 et n3>20) faire
+    ecrire("taper votre note3: ")
+    lire(n3)
+fin tantque
+N<--(n1+n2+n3)/3
+  si N>=16 alors
+    ecrire( "votre moyenne",N,"tres bien")
+sinon
+  si N>=14 et N<16 alors
+     ecrire("votre moyenne",N,"bien")
+sinon
+  si N>=12 et N<14 alors
+     ecrire("votre moyenne",N,"assez bien")
+sinon 
+   si N>10 et N<12 alors
+     ecrire("votre moyenne",N,"passable")
+sinon 
+    ecrire("insuffisant")
+     fin si
+    fin si
+   fin si
+  fin si
+fin
